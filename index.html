@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Commissions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f6; /* Light pink background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff7f9e; /* Pink header/footer */
+            color: white;
+        }
+        h1, h2 {
+            margin: 20px 0;
+        }
+        .portfolio-images {
+            display: flex;
+            flex-wrap: wrap; /* Allows images to wrap */
+            justify-content: center; /* Center the images */
+        }
+        .portfolio-images img {
+            width: 200px;
+            margin: 10px;
+            border: 3px solid #ff7f9e; /* Pink border for images */
+            border-radius: 10px;
+        }
+        button {
+            background-color: #ff4b9e; /* Button background color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #ff7f9e; /* Button hover color */
+            transform: scale(1.05);
+        }
+        #terms-content {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ff4b9e; /* Pink border for terms */
+            border-radius: 5px;
+            background-color: #ffe3e8; /* Light pink background for terms */
+            display: none; /* Initially hidden */
+        }
+        a {
+            color: #ff4b9e;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .social-icons a {
+            font-size: 24px; /* Size of the icons */
+            color: #ff4b9e;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ff7f9e; /* Icon hover color */
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .fade-in.show {
+            opacity: 1;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .portfolio-images img {
+                width: 150px; /* Smaller images on mobile */
+            }
+            button {
+                width: 100%; /* Full width buttons on mobile */
+                padding: 12px; /* Increased padding */
+                font-size: 18px; /* Larger text on mobile */
+            }
+            h1 {
+                font-size: 24px; /* Adjusted heading size */
+            }
+            h2 {
+                font-size: 20px; /* Adjusted subheading size */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="fade-in">
+    <h1>₊✩‧₊˚౨Welcome to the Strawberry Alleyৎ˚₊✩‧₊</h1>
+</header>
+
+<section id="about-me" class="fade-in">
+    <h2>About Me and My Art</h2>
+    <p>Welcome! I'm an artist who specializes in [describe your art style, e.g., semi-realistic, anime-inspired illustrations]. My work is driven by a passion for storytelling and capturing emotion through color and composition. I put my heart into each piece, ensuring that every commission is both personal and unique.</p>
+
+    <div class="abilities">
+        <div class="column">
+            <h3>What I Can Do</h3>
+            <ul>
+                <li>Redraws</li>
+                <li>Fanarts</li>
+                <li>Furries</li>
+                <li>Original Characters</li>
+                <li>Ship Art</li>
+				<li>Character Sheet</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>What I Won't Do</h3>
+            <ul>
+                <li>Mecha</li>
+                <li>Proship</li>
+                <li>Gore</li>
+                <li>Complex Designs</li>
+                <li>NSFW</li>
+				<li>Complex Characters</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="fade-in">
+    <h2>Portfolio</h2>
+    <div class="portfolio-images">
+        <img src="images/Bust (detailed).jpg" alt="Artwork 1">
+        <img src="images/Semi Realistic.png" alt="Artwork 2">
+        <img src="images/Redraw.png" alt="Artwork 3">
+		<img src="images/Bust (Couple ych_example_).png" alt="Artwork 4">
+    </div>
+</section>
+
+<section id="terms" class="fade-in">
+    <h2>Terms and Conditions</h2>
+    <button id="toggle-terms">Show Terms and Conditions</button>
+    <div id="terms-content">
+        <ol>
+            <li>If you are going to commission me, you must automatically follow my terms and services.</li>
+            <li>Payment must always be upfront. I will not start until I get paid first.</li>
+            <li>No refunds or holds UNLESS:
+                <ol>
+                    <li>If I am unable to start the commission, you will receive a full refund.</li>
+                    <li>If I am unable to finish but progress was made, you will be partially refunded depending on how much I've finished.</li>
+                </ol>
+            </li>
+            <li>Be sure to give me the following for your commission:
+                <ol>
+                    <li>Reference of the Character</li>
+                    <li>Pose and Expression</li>
+                    <li>Outfit if not in the reference</li>
+                    <li>Additional details if needed</li>
+                </ol>
+            </li>
+            <li>Let me know if you want updates on your commission.</li>
+            <li>You can only request for changes during the sketch or lineart stages. If you request for changes in the coloring stage and it's not about color, it will cost extra.</li>
+            <li>Do not do big edits of my art without explicit permission. If it makes me uncomfortable, I'm blocking and blacklisting you.</li>
+            <li>If you want an artwork finished by a certain deadline, you must pay extra and inform me before I accept the commission.</li>
+            <li>I can turn down your commission for any reason and will inform you of it.</li>
+            <li>If you plan to use my art for commercial use, inform me before you do.</li>
+            <li>Rude/Disrespectful clients will be blocked. If you attempt to contact me through a different account, you will be blacklisted.</li>
+            <li>No one is allowed to use my art as NFTs.</li>
+            <li>No one is allowed to use my art as a base for AI.</li>
+            <li>If you break any of these rules you will be blocked and blacklisted.</li>
+        </ol>
+    </div>
+</section>
+
+<section id="commissions" class="fade-in">
+    <h2>Commission Options</h2>
+    
+    <!-- Simple Line Art and Flat Colors -->
+    <div class="commission-section">
+        <h3>Simple Line Art and Flat Colors</h3>
+		<h3>Headshot - $5</h3>
+		<h3>Bust - $10</h3>
+		<h3>Full Body - $15</h3>
+        <p>Clean line art with simple, flat colors.</p>
+        <img src="images/Redraw.png" alt="Simple Line Art Example" class="example-image">
+    </div>
+    
+    <!-- Shaded Artwork -->
+    <div class="commission-section">
+        <h3>Shaded Artwork</h3>
+		<h3>Headshot- $10</h3>
+		<h3>Bust - $15</h3>
+		<h3>Full Body - $20</h3>
+        <p>Line art with added shading.</p>
+        <img src="images/Headshot (simple design).png" alt="Shaded Artwork Example" class="example-image">
+		<img src="images/Bust (simple).png" alt="Shaded Artwork Example" class="example-image">
+    </div>
+    
+    <!-- Fully Rendered Artwork -->
+    <div class="commission-section">
+        <h3>Fully Rendered</h3>
+		<h3>Headshot - $15</h3>
+		<h3>Bust - $20</h3>
+		<h3>Full Body - $25</h3>
+        <p>Highly detailed rendering with complex colors and highlights.</p>
+        <img src="images/Bust (detailed).jpg" alt="Fully Rendered Artwork Example" class="example-image">
+		<img src="images/Bust (detailed)(1).jpg" alt="Fully Rendered Artwork Example" class="example-image">
+    </div>
+</section>
+
+<section id="links" class="fade-in">
+    <h2>Links</h2>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/yenndoesarts" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/strawberry_gut5" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.tiktok.com/@yenndoesarts" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+</section>
+
+<section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <p>If you want to commission, please fill out my <a href="YOUR_GOOGLE_FORM_LINK" target="_blank">Google Form</a> or contact me on any of my socials.</p>
+</section>
+
+<footer class="fade-in">
+    <p>&copy; 2024 My Art Commissions. All rights reserved.</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Fade in effect for all sections
+        const fadeInElements = document.querySelectorAll('.fade-in');
+        fadeInElements.forEach(el => {
+            el.classList.add('show');
+        });
+
+        const toggleButton = document.getElementById("toggle-terms");
+        const termsContent = document.getElementById("terms-content");
+
+        toggleButton.addEventListener("click", () => {
+            if (termsContent.style.display === "none" || termsContent.style.display === "") {
+                termsContent.style.display = "block";
+                toggleButton.textContent = "Hide Terms and Conditions";
+            } else {
+                termsContent.style.display = "none";
+                toggleButton.textContent = "Show Terms and Conditions";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
