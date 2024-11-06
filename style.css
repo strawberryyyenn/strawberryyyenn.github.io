@@ -8,8 +8,8 @@
 /* Body styling */
 body {
   font-family: 'CustomFont', Arial, sans-serif;
-  background-color: #fff0f6;
-  color: #333;
+  background-color: #FBF9FA;
+  color: #FBC7DF;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -17,12 +17,12 @@ body {
 /* Header styling */
 header {
   text-align: center;
-  background-color: #ff69b4;
-  color: #fff;
+  background-color: #FBE0ED;
+  color: #FBC7DF;
   padding: 20px;
   font-size: 1.8em;
   font-weight: bold;
-  border-bottom: 5px solid #ffb6c1;
+  border-bottom: 5px solid #FBFFFF;
 }
 
 /* Section styling */
@@ -30,7 +30,7 @@ section {
   margin: 30px auto;
   padding: 20px;
   max-width: 800px;
-  background-color: #ffe4e1;
+  background-color: #FBFFFF;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -46,13 +46,13 @@ section:hover {
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #ffe3e8; /* Soft pink background */
+  background-color: #FBF9FA;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3); /* Soft shadow */
+  box-shadow: 0 4px 12px rgba(251, 199, 223, 0.3); /* Soft shadow */
 }
 
 #about-me h2 {
-  color: #ff4b9e;
+  color: #ff7c9c;
 }
 
 #about-me ul {
@@ -62,23 +62,23 @@ section:hover {
 
 #about-me ul li {
   padding: 5px 0;
-  color: #333;
+  color: #ff7c9c;
 }
 
 .abilities {
   display: flex;
   justify-content: center;
-  gap: 80px; /* Adds space between columns */
+  gap: 80px;
   margin-top: 20px;
 }
 
 .column {
-  width: 200px; /* Sets width of each column */
+  width: 200px;
 }
 
 .column h3 {
   font-size: 18px;
-  color: #ff4b9e; /* Add a subtle color to section headings */
+  color: #ff7c9c;
 }
 
 .column ul {
@@ -87,7 +87,8 @@ section:hover {
 }
 
 .column ul li {
-  margin: 4px 0; /* Space between items */
+  margin: 4px 0;
+  color: #ff7c9c;
 }
 
 /* Responsive Styles */
@@ -102,71 +103,73 @@ section:hover {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  border: 3px solid #ffb6c1; /* Soft pink border */
+  border: 3px solid #FBE0ED;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for images */
 .portfolio-images img:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(255, 182, 193, 0.5); /* Softer shadow on hover */
+  box-shadow: 0 10px 20px rgba(251, 199, 223, 0.5);
 }
 
 .portfolio-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 15px; /* More space between images */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
   justify-content: center;
   max-width: 520px;
   margin: 0 auto;
-  padding: 20px 10px; /* Adds padding around images */
-  background: #fff0f6; /* Light pink background */
-  border-radius: 15px; /* Rounded corners for the grid container */
-  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3); /* Soft shadow around grid */
+  padding: 20px 10px;
+  background: #FBF9FA;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(251, 199, 223, 0.3);
 }
 
 .commission-section {
   margin-bottom: 30px;
   text-align: center;
 }
+
 .commission-section h3 {
-  color: #ff4b9e;
+  color: #ff7c9c;
   margin-bottom: 10px;
 }
+
 .commission-section p {
   font-size: 16px;
-  color: #333;
+  color: #ff7c9c;
 }
+
 .commission-section .example-image {
   width: 250px;
   margin-top: 10px;
-  border: 3px solid #ff7f9e;
+  border: 3px solid #FBC7DF;
   border-radius: 10px;
 }
 
 /* Price styling */
 .commission-section {
-  font-size: 1.5em; /* Increase font size for visibility */
-  color: #ff4b9e; /* Use a vibrant color to make it pop */
-  font-weight: bold; /* Bold font for emphasis */
-  padding: 10px; /* Add padding for better spacing */
-  border: 2px solid #ff69b4; /* Soft pink border */
-  border-radius: 8px; /* Rounded corners */
-  background-color: #ffe4e1; /* Soft pink background */
-  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3); /* Subtle shadow for depth */
-  display: inline-block; /* Makes it inline but retains block properties */
-  margin: 10px 0; /* Vertical spacing around price */
-  transition: transform 0.3s, background-color 0.3s; /* Transition effects */
+  font-size: 1.5em;
+  color: #FBC7DF;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid #FBE0ED;
+  border-radius: 8px;
+  background-color: #FBFFFF;
+  box-shadow: 0 4px 8px rgba(251, 199, 223, 0.3);
+  display: inline-block;
+  margin: 10px 0;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 .commission-section:hover {
-  transform: scale(1.05); /* Slightly scale up on hover */
-  background-color: #ffb6c1; /* Change background color on hover */
+  transform: scale(1.05);
+  background-color: #FBE0ED;
 }
 
 /* Terms and Conditions styling */
 #terms h2 {
-  color: #ff69b4;
+  color: #ff7c9c;
   font-size: 1.5em;
   margin-bottom: 10px;
 }
@@ -174,16 +177,17 @@ section:hover {
 #terms-content {
   padding: 15px;
   margin-top: 10px;
-  border: 1px solid #ffb6c1;
-  background-color: #fff5f8;
+  border: 1px solid #FBE0ED;
+  background-color: #FBFFFF;
   text-align: left;
   border-radius: 8px;
+  color: #ff7c9c;
 }
 
 /* Ordered lists */
 #terms-content ol {
   margin-left: 20px;
-  color: #333;
+  color: #ff7c9c;
 }
 
 #terms-content ol ol {
@@ -192,7 +196,7 @@ section:hover {
 
 /* Links */
 #links h2 {
-  color: #ff69b4;
+  color: #ff7c9c;
   font-size: 1.5em;
 }
 
@@ -200,15 +204,15 @@ section:hover {
   display: inline-block;
   margin: 8px;
   padding: 10px 20px;
-  color: #fff;
-  background-color: #ff69b4;
+  color: #FBFFFF;
+  background-color: #ff7c9c;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s, transform 0.3s;
 }
 
 #links a:hover {
-  background-color: #ff85c2;
+  background-color: #ff7c9c;
   transform: scale(1.05);
 }
 
@@ -225,15 +229,16 @@ footer textarea {
   width: 100%;
   max-width: 500px;
   padding: 10px;
-  border: 2px solid #ffb6c1;
+  border: 2px solid #FBE0ED;
   border-radius: 5px;
-  background-color: #fff5f8;
+  background-color: #FBFFFF;
+  color: #FBC7DF;
 }
 
 footer button {
   padding: 10px 20px;
-  color: #fff;
-  background-color: #ff69b4;
+  color: #FBFFFF;
+  background-color: #FBE0ED;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -241,7 +246,7 @@ footer button {
 }
 
 footer button:hover {
-  background-color: #ff85c2;
+  background-color: #FBE0ED;
   transform: scale(1.05);
 }
 
